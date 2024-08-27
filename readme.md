@@ -72,3 +72,45 @@ go run --race [filename.go]
 ```
 go build --race [filename.go]
 ```
+
+## Channels 
+- share memory by communicating
+- data type designed to enable communication between goroutines
+### Declaration
+```go
+var [var_name] chan [data_type]
+// ex:
+var ch chan int
+```
+### Initialization
+```go
+[var_name] = make(chan [data_type])
+// ex:
+ch = make(chan int)
+```
+### Declaration & Initialization
+```go
+var ch chan int = make(chan int)
+// OR (type inference)
+var ch = make(chan int)
+// OR
+ch := make(chan int)
+```
+#### Channel Operations
+- using the channel operator ( <- )
+##### Send Operation
+```go
+[chan_var_name] <- [data]
+// ex:
+ch <- 100
+```
+##### Receive Operation
+```go
+<- [chan_var_name]
+// ex:
+<- ch
+// OR
+data := <- ch
+```
+
+

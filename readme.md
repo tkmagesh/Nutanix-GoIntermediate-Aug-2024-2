@@ -64,3 +64,11 @@
 ### WaitGroup
 - semaphore based counter
 - can block the execution of the current function until the counter becomes 0
+
+## Detecting Data Races
+```
+go run --race [filename.go]
+```
+```
+go build --race [filename.go]
+```

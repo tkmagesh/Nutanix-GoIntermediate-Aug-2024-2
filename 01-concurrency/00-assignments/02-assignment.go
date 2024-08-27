@@ -1,6 +1,5 @@
 /*
-rewrite to take advantange of go concurrency
-also, print the prime numbers in the main() function
+rewrite to follow "share memory by communicating"
 */
 package main
 

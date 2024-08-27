@@ -112,5 +112,6 @@ ch <- 100
 // OR
 data := <- ch
 ```
-
+#### Channel behavior
+![image](./images/channel-behavior.png)
 

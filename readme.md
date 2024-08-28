@@ -115,3 +115,22 @@ data := <- ch
 #### Channel behavior
 ![image](./images/channel-behavior.png)
 
+## Context
+- For cancellation propagation
+- "context" package
+    - context.Background()
+        - Non cancellable context
+        - used to create the top most context
+    - context.WithCancel(parentCtx)
+        - Cancellable context
+        - Programmatic cancellation
+    - context.WithTimeout(parentCtx, relativeTime)
+        - Auto cancellation based on the relative time
+        - Also allows programmatic cancellation
+        - Wrapper for context.WithDeadline()
+    - context.WithDeadline(parentCtx, absoluteTime)
+        - Auto cancellation based on the absolute time
+        - Also allows programmatic cancellation
+    - context.WithValue(parentCtx, key, value)
+        - Non cancellation
+        - Used to share data across context hierarchy

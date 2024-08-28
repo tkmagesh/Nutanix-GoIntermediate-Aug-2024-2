@@ -21,7 +21,7 @@ func main() {
 	}()
 
 	go func() {
-		time.Sleep(3 * time.Second)
+		// time.Sleep(3 * time.Second)
 		d3 := <-ch3
 		fmt.Println(d3)
 	}()

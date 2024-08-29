@@ -134,3 +134,13 @@ data := <- ch
     - context.WithValue(parentCtx, key, value)
         - Non cancellation
         - Used to share data across context hierarchy
+
+## Database Programming
+- database/sql
+- sqlx
+    - wrapper for database/sql
+- code generators (ex: sqlc)
+- ORM (ex: gorm)
+
+## Testing
+- gotest tool (https://github.com/rakyll/gotest)

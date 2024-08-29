@@ -144,3 +144,7 @@ data := <- ch
 
 ## Testing
 - gotest tool (https://github.com/rakyll/gotest)
+- Mock generator (https://vektra.github.io/mockery/latest)
+
+## Libraries & Frameworks
+- https://github.com/avelino/awesome-go
